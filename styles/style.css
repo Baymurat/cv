@@ -208,16 +208,25 @@ section.avatar figure {
     width: 100%;
   }
 
+  .experience .experience__item,
   .education .education__item {
     padding-bottom: 0.75rem;
   }
+
+  .experience .experience__item-header,
   .education .education__item-header {
     display: flex;
     justify-content: space-between;
   }
 
+  .experience .experience__item-name,
   .education .education__item-name {
     font-weight: 600;
+  }
+
+  .education .education__item-date,
+  .experience .experience__item-date {
+    flex-shrink: 0;
   }
 }
 
