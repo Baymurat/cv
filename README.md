@@ -1,1 +1,1 @@
-# https://baymurat.github.io/rsschool-cv/
+# https://baymurat.github.io/cv/

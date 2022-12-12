@@ -22,6 +22,30 @@ main {
   justify-content: center;
 }
 
+footer {
+  height: 60px;
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -142,6 +166,10 @@ section.avatar figure {
   left: -75%;
 }
 
+section.projects {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 575px) {
   .wrapper {
     width: 100%;
@@ -232,6 +260,7 @@ section.avatar figure {
   .education .education__item-date,
   .experience .experience__item-date {
     flex-shrink: 0;
+    font-weight: 200;
   }
 
   .project.projects__item {
