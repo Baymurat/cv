@@ -22,6 +22,11 @@ main {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .wrapper {
   align-items: center;
   display: flex;
@@ -228,6 +233,62 @@ section.avatar figure {
   .experience .experience__item-date {
     flex-shrink: 0;
   }
+
+  .project.projects__item {
+    position: relative;
+    padding: 10px 0;    
+    margin: 20px 0 20px 10px;
+  }
+
+  .project.projects__item a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project .project__picture img {
+    width: 100%;
+  }
+
+  .project.projects__item::before {
+    content: '';  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50%;
+    background: gray;
+    transition: width 500ms ease-out, background 500ms ease-out;
+  }
+
+  .project.projects__item .project__picture {
+    transition: box-shadow 500ms ease-out;
+  }
+
+  .project.projects__item:hover .project__picture {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .project.projects__item:hover::before {
+    width: 100%;
+    background: pink;
+  }
+
+  .project .project__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project .project__technologies {
+    display: flex;
+    gap: 5px;
+  }
+
+  .project .project__technology {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* X-Small devices (portrait phones, less than 576px)
@@ -290,4 +351,19 @@ section.avatar figure {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
   
+}
+
+.appear-animation {
+  animation: appear 1500ms ease-out;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
