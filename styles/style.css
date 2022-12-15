@@ -119,6 +119,10 @@ section.avatar {
   overflow: hidden;
 }
 
+.avatar__img-container img {
+  width: 100%;
+}
+
 section.avatar figure {
   position: relative;
   top: -22px;
